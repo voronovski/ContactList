@@ -56,15 +56,31 @@
 		FABE7A43296AA4D50050B4AA /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
+				FABE7A59296B687E0050B4AA /* ViewControllers */,
+				FABE7A58296B68710050B4AA /* Storyboards */,
 				FABE7A44296AA4D50050B4AA /* AppDelegate.swift */,
 				FABE7A46296AA4D50050B4AA /* SceneDelegate.swift */,
-				FABE7A48296AA4D50050B4AA /* ViewController.swift */,
-				FABE7A4A296AA4D50050B4AA /* Main.storyboard */,
 				FABE7A4D296AA4D60050B4AA /* Assets.xcassets */,
-				FABE7A4F296AA4D60050B4AA /* LaunchScreen.storyboard */,
 				FABE7A52296AA4D60050B4AA /* Info.plist */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		FABE7A58296B68710050B4AA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FABE7A4A296AA4D50050B4AA /* Main.storyboard */,
+				FABE7A4F296AA4D60050B4AA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FABE7A59296B687E0050B4AA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FABE7A48296AA4D50050B4AA /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
