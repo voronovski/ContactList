@@ -20,12 +20,11 @@ struct Person {
     
     static func getPersons() -> [Person] {
         var persons: [Person] = []
-        let dataStore = DataStore()
         
-        for _ in 1...dataStore.firstNames.count {
-            let firstName = dataStore.firstNames.randomElement() ?? "John"
-            let lastName = dataStore.lastNames.randomElement() ?? "Dow"
-            let phone = dataStore.phones.randomElement() ?? "111-222-3344"
+        for _ in 1...firstNames.count {
+            let firstName = firstNames.randomElement() ?? "John"
+            let lastName = lastNames.randomElement() ?? "Dow"
+            let phone = phones.randomElement() ?? "111-222-3344"
             
             let person = Person(firstName: firstName, lastName: lastName, phone: phone)
             persons.append(person)
