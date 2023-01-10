@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		FABE7A45296AA4D50050B4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE7A44296AA4D50050B4AA /* AppDelegate.swift */; };
 		FABE7A47296AA4D50050B4AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE7A46296AA4D50050B4AA /* SceneDelegate.swift */; };
-		FABE7A49296AA4D50050B4AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE7A48296AA4D50050B4AA /* ViewController.swift */; };
 		FABE7A4C296AA4D50050B4AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABE7A4A296AA4D50050B4AA /* Main.storyboard */; };
 		FABE7A4E296AA4D60050B4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABE7A4D296AA4D60050B4AA /* Assets.xcassets */; };
 		FABE7A51296AA4D60050B4AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABE7A4F296AA4D60050B4AA /* LaunchScreen.storyboard */; };
+		FABE7A5B296D29EB0050B4AA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE7A5A296D29EB0050B4AA /* Person.swift */; };
+		FABE7A5E296D2EA70050B4AA /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE7A5D296D2EA70050B4AA /* ContactListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FABE7A41296AA4D50050B4AA /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABE7A44296AA4D50050B4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FABE7A46296AA4D50050B4AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FABE7A48296AA4D50050B4AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FABE7A4B296AA4D50050B4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FABE7A4D296AA4D60050B4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABE7A50296AA4D60050B4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FABE7A52296AA4D60050B4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABE7A5A296D29EB0050B4AA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FABE7A5D296D2EA70050B4AA /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		FABE7A43296AA4D50050B4AA /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
+				FABE7A5C296D2BFA0050B4AA /* Model */,
 				FABE7A59296B687E0050B4AA /* ViewControllers */,
 				FABE7A58296B68710050B4AA /* Storyboards */,
 				FABE7A44296AA4D50050B4AA /* AppDelegate.swift */,
@@ -78,9 +81,17 @@
 		FABE7A59296B687E0050B4AA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FABE7A48296AA4D50050B4AA /* ViewController.swift */,
+				FABE7A5D296D2EA70050B4AA /* ContactListViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FABE7A5C296D2BFA0050B4AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FABE7A5A296D29EB0050B4AA /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FABE7A49296AA4D50050B4AA /* ViewController.swift in Sources */,
 				FABE7A45296AA4D50050B4AA /* AppDelegate.swift in Sources */,
+				FABE7A5E296D2EA70050B4AA /* ContactListViewController.swift in Sources */,
+				FABE7A5B296D29EB0050B4AA /* Person.swift in Sources */,
 				FABE7A47296AA4D50050B4AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
