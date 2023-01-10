@@ -7,10 +7,12 @@
 
 import UIKit
 
-class ContactListViewController: UITableViewController {
-
+final class ContactListViewController: UITableViewController {
+    
+    // MARK: - Public properties
     var persons = Person.getPersons()
     
+    // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -31,7 +33,9 @@ class ContactListViewController: UITableViewController {
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        guard let detailsVS = segue.destination as? PersonDetailsViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        detailsVS.person = persons[indexPath.row]
     }
 
 }
