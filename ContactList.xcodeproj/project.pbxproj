@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA21E109296EA48B00EFB646 /* DetailListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21E108296EA48B00EFB646 /* DetailListTableViewController.swift */; };
+		FA21E10B296EAB4700EFB646 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21E10A296EAB4700EFB646 /* TabBarController.swift */; };
 		FA8949F4296D5A42009F576F /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8949F3296D5A42009F576F /* PersonDetailsViewController.swift */; };
 		FABE7A45296AA4D50050B4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE7A44296AA4D50050B4AA /* AppDelegate.swift */; };
 		FABE7A47296AA4D50050B4AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE7A46296AA4D50050B4AA /* SceneDelegate.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA21E108296EA48B00EFB646 /* DetailListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListTableViewController.swift; sourceTree = "<group>"; };
+		FA21E10A296EAB4700EFB646 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FA8949F3296D5A42009F576F /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
 		FABE7A41296AA4D50050B4AA /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABE7A44296AA4D50050B4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,8 +89,10 @@
 		FABE7A59296B687E0050B4AA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA21E10A296EAB4700EFB646 /* TabBarController.swift */,
 				FABE7A5D296D2EA70050B4AA /* ContactListViewController.swift */,
 				FA8949F3296D5A42009F576F /* PersonDetailsViewController.swift */,
+				FA21E108296EA48B00EFB646 /* DetailListTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -172,7 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABE7A45296AA4D50050B4AA /* AppDelegate.swift in Sources */,
+				FA21E10B296EAB4700EFB646 /* TabBarController.swift in Sources */,
 				FABE7A5E296D2EA70050B4AA /* ContactListViewController.swift in Sources */,
+				FA21E109296EA48B00EFB646 /* DetailListTableViewController.swift in Sources */,
 				FA8949F4296D5A42009F576F /* PersonDetailsViewController.swift in Sources */,
 				FABE7A5B296D29EB0050B4AA /* Person.swift in Sources */,
 				FABE7A60296D3F1B0050B4AA /* DataStore.swift in Sources */,

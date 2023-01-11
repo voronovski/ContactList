@@ -10,13 +10,8 @@ import UIKit
 final class ContactListViewController: UITableViewController {
     
     // MARK: - Public properties
-    var persons = Person.getPersons()
+    var persons: [Person]!
     
-    // MARK: - View lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         persons.count
