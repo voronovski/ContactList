@@ -20,14 +20,12 @@ final class TabBarController: UITabBarController {
     
     // MARK: - Private methods
     private func dataSender() {
-        viewControllers?.forEach { viewController in
-            if let contactsNC = viewController as? ContactsNavigationController {
-                guard let contactsVC = contactsNC.viewControllers.first as? ContactListViewController else { return }
-                contactsVC.persons = persons
-            } else if let detailNC = viewController as? DetailsNavigationController {
-                guard let detailVC = detailNC.viewControllers.first as? DetailListTableViewController else { return }
-                detailVC.persons = persons
-            }
-        }
+        guard let contactsNC = viewControllers?.first as? UINavigationController else { return }
+        guard let contactsVC = contactsNC.viewControllers.first as? ContactListViewController else { return }
+        contactsVC.persons = persons
+        
+        guard let detailNC = viewControllers?.last as? UINavigationController else { return }
+        guard let detailVC = detailNC.viewControllers.first as? DetailListTableViewController else { return }
+        detailVC.persons = persons
     }
 }
