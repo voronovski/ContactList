@@ -20,16 +20,17 @@ struct Person {
     
     static func getPersons() -> [Person] {
         var persons: [Person] = []
+        let data = DataStore()
         
-        for _ in 1...firstNames.count {
-            let randomName = Int.random(in: 0..<firstNames.count)
-            let firstName = firstNames.remove(at: randomName)
+        for _ in 1...data.firstNames.count {
+            let randomName = Int.random(in: 0..<data.firstNames.count)
+            let firstName = data.firstNames.remove(at: randomName)
             
-            let randomLastName = Int.random(in: 0..<lastNames.count)
-            let lastName = lastNames.remove(at: randomLastName)
+            let randomLastName = Int.random(in: 0..<data.lastNames.count)
+            let lastName = data.lastNames.remove(at: randomLastName)
             
-            let randomPhone = Int.random(in: 0..<phones.count)
-            let phone = phones.remove(at: randomPhone)
+            let randomPhone = Int.random(in: 0..<data.phones.count)
+            let phone = data.phones.remove(at: randomPhone)
             
             let person = Person(firstName: firstName, lastName: lastName, phone: phone)
             persons.append(person)

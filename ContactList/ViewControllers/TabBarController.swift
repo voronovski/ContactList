@@ -9,13 +9,23 @@ import UIKit
 
 final class TabBarController: UITabBarController {
 
+    // MARK: - Private properties
     private let persons = Person.getPersons()
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let contactVC = segue.destination as? ContactListViewController {
-            contactVC.persons = persons
-        } else if let detailVC = segue.destination as? DetailListTableViewController {
-            detailVC.persons = persons
+    // MARK: - View lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        dataSender()
+    }
+    
+    // MARK: - Private methods
+    private func dataSender() {
+        viewControllers?.forEach { viewController in
+            if let contactsNC = viewController as? ContactsNavigationController {
+                contactsNC.persons = persons
+            } else if let detailNC = viewController as? DetailsNavigationController {
+                detailNC.persons = persons
+            }
         }
     }
 }

@@ -90,7 +90,7 @@
         <!--Details-->
         <scene sceneID="A2E-Bi-AF8">
             <objects>
-                <navigationController id="Q73-nd-uji" sceneMemberID="viewController">
+                <navigationController id="Q73-nd-uji" customClass="DetailsNavigationController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Details" image="person.circle.fill" catalog="system" id="Iaw-6g-ajH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="3ow-Bf-p6a">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
@@ -151,7 +151,7 @@
         <!--Contacts-->
         <scene sceneID="eEt-yf-Yyq">
             <objects>
-                <navigationController id="lIu-l6-SV3" sceneMemberID="viewController">
+                <navigationController id="lIu-l6-SV3" customClass="ContactsNavigationController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.circle.fill" catalog="system" selectedImage="person.circle.fill" id="grf-Ii-Iuq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="rzb-lg-ti9">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
