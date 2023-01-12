@@ -22,9 +22,11 @@ final class TabBarController: UITabBarController {
     private func dataSender() {
         viewControllers?.forEach { viewController in
             if let contactsNC = viewController as? ContactsNavigationController {
-                contactsNC.persons = persons
+                guard let contactsVC = contactsNC.viewControllers.first as? ContactListViewController else { return }
+                contactsVC.persons = persons
             } else if let detailNC = viewController as? DetailsNavigationController {
-                detailNC.persons = persons
+                guard let detailVC = detailNC.viewControllers.first as? DetailListTableViewController else { return }
+                detailVC.persons = persons
             }
         }
     }
