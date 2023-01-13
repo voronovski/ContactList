@@ -14,6 +14,12 @@ class DetailListTableViewController: UITableViewController {
     
     // MARK: - Table view data source
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.allowsSelection = false
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         persons.count
     }
@@ -47,6 +53,5 @@ class DetailListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        tableView.allowsSelection = false
     }
 }
