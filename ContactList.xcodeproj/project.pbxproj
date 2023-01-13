@@ -47,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA21E110297107E600EFB646 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FABE7A5F296D3F1B0050B4AA /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		FABE7A38296AA4D50050B4AA = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				FABE7A5C296D2BFA0050B4AA /* Model */,
+				FA21E110297107E600EFB646 /* Services */,
 				FABE7A59296B687E0050B4AA /* ViewControllers */,
 				FABE7A58296B68710050B4AA /* Storyboards */,
 				FABE7A44296AA4D50050B4AA /* AppDelegate.swift */,
@@ -101,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				FABE7A5A296D29EB0050B4AA /* Person.swift */,
-				FABE7A5F296D3F1B0050B4AA /* DataStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

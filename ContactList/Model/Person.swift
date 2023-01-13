@@ -20,16 +20,15 @@ struct Person {
     
     static func getPersons() -> [Person] {
         var persons: [Person] = []
-        let data = DataStore()
         
-        for _ in 1...data.firstNames.count {
-            let shuffledFirstNames = data.firstNames.shuffled()
+        for _ in 1...DataStore.shared.firstNames.count {
+            let shuffledFirstNames = DataStore.shared.firstNames.shuffled()
             let firstName = shuffledFirstNames.first ?? "John"
             
-            let shuffledLastNames = data.lastNames.shuffled()
+            let shuffledLastNames = DataStore.shared.lastNames.shuffled()
             let lastName = shuffledLastNames.first ?? "Dow"
             
-            let shuffledPhones = data.phones.shuffled()
+            let shuffledPhones = DataStore.shared.phones.shuffled()
             let phone = shuffledPhones.first ?? "111-222-3333"
             
             let person = Person(firstName: firstName, lastName: lastName, phone: phone)
