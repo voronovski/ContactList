@@ -19,6 +19,7 @@ final class PersonDetailsViewController: UIViewController {
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         title = person.name
         phoneLabel.text = "phone: " + person.phone
         emailLabel.text = "email: " + person.email
