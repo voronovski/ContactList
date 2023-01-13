@@ -37,7 +37,7 @@ class DetailListTableViewController: UITableViewController {
         } else {
             var content = cell.defaultContentConfiguration()
             content.text = person.email
-            content.image = UIImage(systemName: "message")
+            content.image = UIImage(systemName: "at")
             cell.contentConfiguration = content
         }
         return cell
