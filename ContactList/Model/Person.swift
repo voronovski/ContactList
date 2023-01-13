@@ -23,19 +23,18 @@ struct Person {
         let data = DataStore()
         
         for _ in 1...data.firstNames.count {
-            let randomName = Int.random(in: 0..<data.firstNames.count)
-            let firstName = data.firstNames.remove(at: randomName)
+            let shuffledFirstNames = data.firstNames.shuffled()
+            let firstName = shuffledFirstNames.first
             
-            let randomLastName = Int.random(in: 0..<data.lastNames.count)
-            let lastName = data.lastNames.remove(at: randomLastName)
+            let shuffledLastNames = data.lastNames.shuffled()
+            let lastName = shuffledLastNames.first
             
-            let randomPhone = Int.random(in: 0..<data.phones.count)
-            let phone = data.phones.remove(at: randomPhone)
+            let shuffledPhones = data.phones.shuffled()
+            let phones = shuffledPhones.first
             
             let person = Person(firstName: firstName, lastName: lastName, phone: phone)
             persons.append(person)
         }
-        
         return persons
     }
 }
