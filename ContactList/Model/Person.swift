@@ -24,13 +24,13 @@ struct Person {
         
         for _ in 1...data.firstNames.count {
             let shuffledFirstNames = data.firstNames.shuffled()
-            let firstName = shuffledFirstNames.first
+            let firstName = shuffledFirstNames.first ?? "John"
             
             let shuffledLastNames = data.lastNames.shuffled()
-            let lastName = shuffledLastNames.first
+            let lastName = shuffledLastNames.first ?? "Dow"
             
             let shuffledPhones = data.phones.shuffled()
-            let phones = shuffledPhones.first
+            let phone = shuffledPhones.first ?? "111-222-3333"
             
             let person = Person(firstName: firstName, lastName: lastName, phone: phone)
             persons.append(person)

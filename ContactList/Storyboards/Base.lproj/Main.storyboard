@@ -91,7 +91,7 @@
         <scene sceneID="A2E-Bi-AF8">
             <objects>
                 <navigationController id="Q73-nd-uji" customClass="DetailsNavigationController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Details" image="person.circle.fill" catalog="system" id="Iaw-6g-ajH"/>
+                    <tabBarItem key="tabBarItem" title="Details" image="list.bullet.circle.fill" catalog="system" id="Iaw-6g-ajH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="3ow-Bf-p6a">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -152,7 +152,7 @@
         <scene sceneID="eEt-yf-Yyq">
             <objects>
                 <navigationController id="lIu-l6-SV3" customClass="ContactsNavigationController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle.fill" catalog="system" selectedImage="pho" id="grf-Ii-Iuq"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.circle.fill" catalog="system" id="grf-Ii-Iuq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="rzb-lg-ti9">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -185,8 +185,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="list.bullet.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="pho" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
